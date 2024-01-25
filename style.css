@@ -1,0 +1,104 @@
+html ,body{
+    height: 100%;
+    width:100%;
+    font-size: 16px;
+}
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+#heading{
+    background-color: black;
+    padding: 1rem;
+    box-shadow: 0 0.2rem 0 white , 0 0.3rem 0 lightgreen, 0 0.4rem 0 green ;
+    
+}
+
+#heading h1{
+    text-align: center;
+    color: white;
+    text-shadow: 0.5px 0.5px 0 black,1.5px 1.5px 2px lightgreen, 3px 3px 1px green;
+}
+
+#cal-body{
+    margin: 0 auto;
+    border: 0.2rem solid lightgreen;
+    width: 250px;
+    border-radius: 10px;
+    /* outline: 3px solid green; */
+    box-shadow: 0px 0px 4px 2px green; 
+    margin-top:3rem ;
+}
+
+#screen{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+#screen input{
+    width: 100%;
+    height: 2.5rem;
+    background-color: black;
+    font-size: 1.5rem;
+    color: lightgreen;
+    border: 0.1rem solid green;
+    box-shadow: 0px 0px 0.5px 1px lightgreen;
+    border-radius: 8px;
+    outline: none;
+    text-align: right;
+    padding: 0.3rem;
+    padding-right: 0.4rem ;
+}
+
+#btns{
+    width: 100%;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-content: center;
+    justify-items: center;
+    row-gap:0.5rem;
+    column-gap: 0.5rem;
+    /* gap:0.3rem; */
+    border-top: 2px solid lightgreen;
+}
+
+#btns button{
+    font-size: 1.4rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: transparent;
+    color:green;
+    text-shadow: 1px 1px 2px lightgreen;
+    border: 2px solid lightgreen;
+    outline: none;
+    box-shadow: 3px 3px 2px green;
+}
+#btns button:active{
+    box-shadow: none;
+    color: lightgreen;
+    text-shadow:none;
+    border-color: green;
+    transform: translate(5px);
+}
+#btns .add{
+    height: 5.3rem;
+    grid-row: 3/5;
+    grid-column: 4/5;
+}
+
+#btns .zero{
+    grid-column: 1/3;
+    width: 5.3rem;
+}
