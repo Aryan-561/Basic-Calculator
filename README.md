@@ -1,2 +1,2 @@
-# Basic-Calculator
-Code of basic calculator make with HTML ,CSS and with JS logic.
+# Simple-Calculator
+Code of simple calculator make with HTML ,CSS and with JS logic.
