@@ -9,7 +9,7 @@ document.querySelectorAll("#btns .nums").forEach((btn)=>{
         else{
             input.value += numBtn;
         }
-        opr();
+        opr(false);
     })
 })
 
@@ -46,7 +46,7 @@ deci.addEventListener("click",()=>{
 
 document.querySelector("#clear").addEventListener("click",()=>{
     input.value="0";
-    opr();
+    opr(false);
 
 });
 
@@ -55,7 +55,7 @@ document.querySelector("#backspace").addEventListener("click",()=>{
     if(input.value == ""){
         input.value = "0";
     }
-    opr();
+    oprDisabled(false);
 })
 
 document.querySelector("#res").addEventListener("click",calculate);
@@ -70,7 +70,7 @@ function calculate(){
             input.value ="0";
         },1000)
     }
-    opr();
+    opr(false);
 }
 
 function oprDisabled(boolen){
@@ -79,7 +79,7 @@ function oprDisabled(boolen){
     })
 }
 
-function opr(){
-    oprDisabled(false);
+function opr(boolen){
+    oprDisabled(boolen);
     isOpr= false;
 }
